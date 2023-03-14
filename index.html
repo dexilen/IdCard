@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Portfolio de Dexilen Mendoza" />
+    <title>Yo soy Dexi</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/primeflex@^3/primeflex.css">
+    <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/saga-blue.css">
+</head>
+
+<body>
+    <!-- Mi header -->
+    <header class="flex w-full fixed top-0 z-1">
+        <nav class="flex justify-content-between w-full navbar">
+            <span class="logo cursor-pointer" onclick="scrollToSection('home')">
+                <img src="./assets/Logo_Dexi.png" alt="Logo portafolio" width="50" height="50">
+            </span>
+            <input type="checkbox" aria-label="Checkbox para mostrar y quitar hamburger menu"
+                class="checkbox xl:hidden">
+            <div class="hamburger__lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+        </nav>
+    </header>
+    <!--Mi Landing -->
+    <div class="container">
+        <section id="home"
+            class="home__page flex align-items-center justify-content-center xl\:justify-content-between grid grid-nogutter gap-4">
+            <div class="left__content col-12 xl:col-6">
+                <div class="message__bubble triangle mb-4 md:mb-2">
+                    <div class="message__text p-2 sm:p-3 text-center">
+                        <p style="font-size:larger;">Yo soy</p>
+                    </div>
+                </div>
+                <h1 class="text-3xl sm:text-5xl md:text-7xl">Dexilen Mendoza</h1>
+                <p style="color:grey; font-size: larger;">
+                    Desarrolladora frontend en crecimiento con conocimientos de Node.js y Python. Tengo años de experiencia en el mundo de la tecnología y las startups. Proactiva y con ganas de seguir aprendiendo.</p>
+                <div class="home__buttons flex align-items-center gap-2 mt-6">
+                    <a href="mailTo:dexilen@gmail.com" aria-label="Enviar mensaje al correo"
+                    class="cursor-pointer no-underline border-round-lg text-xl xl:text-sm">Contáctame</a>
+                </div>
+            </div>
+            <div class="right__content col-9 sm:col-6 xl:col-5">
+                <img src="./assets/foto_perfil.png" alt="Foto perfil" width="100" height="100">
+            </div>
+        </section>
+</body>
+
+</html>
